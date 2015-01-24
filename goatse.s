@@ -2,10 +2,10 @@ bits 16
 org 0x7c00
 
 init:
+    ; assumes bx=0
     mov ax, 3
     int 0x10
 
-    xor bx, bx
     push bx
     pop ds
     push 0xb800
@@ -45,9 +45,14 @@ endline:
     jnz iter
 
 done:
-    mov ch, 0x20
-    mov ah, 0x01
+    mov ah, 2
+    xor bh, bh
+    mov dx, 0x0b23
     int 0x10
+
+    ; mov ch, 0x20
+    ; mov ah, 0x01
+    ; int 0x10
 
     ; xor ax, ax
     ; int 0x16
