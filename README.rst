@@ -3,6 +3,13 @@ Goatse MBR
 
 A 512-byte bootloader displaying ASCII Goatse on boot.
 
+QEMU
+====
+
+To test the bootloader you can run it in QEMU::
+
+    qemu-system-i386 -hda goatse.mbr
+
 Bootable USB
 ============
 
