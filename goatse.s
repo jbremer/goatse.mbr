@@ -12,6 +12,7 @@ init:
     pop es
     mov si, text
     xor di, di
+    mov dx, lut
 
 iter:
     lodsb
@@ -24,10 +25,10 @@ iter:
     test al, al
     jz skipspace
 
-    mov al, byte [lut+eax]
+    mov al, byte [edx+eax]
     stosb
     inc di
-    mov al, byte [lut+ecx]
+    mov al, byte [edx+ecx]
     stosb
     inc di
     jmp iter
@@ -40,7 +41,7 @@ skipspace:
 endline:
     add bx, 80*2
     mov di, bx
-    cmp di, 80*21*2
+    cmp bh, 0x0e
     jnz iter
 
 done:
@@ -48,11 +49,11 @@ done:
     mov ah, 0x01
     int 0x10
 
-    xor ax, ax
-    int 0x16
+    ; xor ax, ax
+    ; int 0x16
 
     ; ljmp 0xfff0, 0xf000
-    db 0xea, 0xf0, 0xff, 0x00, 0xf0
+    ; db 0xea, 0xf0, 0xff, 0x00, 0xf0
 
 lut:
     incbin "lut.bin"
