@@ -20,3 +20,9 @@ points to your USB using ``fdisk -l``, in the following example we assume
 it's ``/dev/sdb``::
 
     dd if=goatse.mbr of=/dev/sdb bs=1 count=512
+
+License
+=======
+
+``Goatse MBR (tm)`` is licensed under the ``Goatse License``, i.e., abuse as
+desired.
