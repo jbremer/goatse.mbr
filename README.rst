@@ -15,9 +15,9 @@ To test the bootloader you can run it in QEMU::
 Bootable USB
 ============
 
-Copy it onto your USB drive of choice using ``dd``. Please verify which device
-points to your USB using ``fdisk -l``, in the following example we assume
-it's ``/dev/sdb``::
+Copy it onto your USB drive of choice using ``dd``. Please verify which block
+device points to your USB using ``fdisk -l``, in the following example we
+assume it's ``/dev/sdb``::
 
     dd if=goatse.mbr of=/dev/sdb bs=1 count=512
 

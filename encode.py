@@ -1,14 +1,10 @@
-# import hd
-
 buf = open('goatse.txt').read()
 
 hist = {}
 for ch in buf:
-    if ch == '0':
-        continue
-
     hist[ch] = hist.get(ch, 0) + 1
 
+# Slightly indent the ASCII by prepending some whitespaces.
 maxlen = max(len(line) for line in buf.split('\n'))
 buf = '\n'.join(' '*((70-maxlen)/2) + line for line in buf.split('\n'))
 
