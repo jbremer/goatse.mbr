@@ -26,3 +26,8 @@ License
 
 ``Goatse MBR (tm)`` is licensed under the ``Goatse License``, i.e., abuse as
 desired.
+
+TLDR (To Long Didn't Run)
+=======
+
+![alt tag](https://github.com/XlogicX/goatse.mbr/blob/master/pictures/goatse.png?raw=true)
