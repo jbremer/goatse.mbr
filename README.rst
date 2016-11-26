@@ -1,5 +1,3 @@
-![alt tag](https://github.com/XlogicX/goatse.mbr/blob/master/pictures/goatse.png?raw=true)
-
 Goatse MBR
 ==========
 
@@ -29,8 +27,9 @@ License
 ``Goatse MBR (tm)`` is licensed under the ``Goatse License``, i.e., abuse as
 desired.
 
-TLDR (To Long Didn't Run)
-=======
+TLDR (Too Long Didn't Run)
+==========================
 
-A screenshot; preview for those that don't run this.
-![alt tag](https://github.com/XlogicX/goatse.mbr/blob/master/pictures/goatse.png?raw=true)
+A screenshot preview for those that don't want to run this themselves.
+
+.. image:: https://github.com/jbremer/goatse.mbr/blob/master/pictures/goatse.png?raw=true
