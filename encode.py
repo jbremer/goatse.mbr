@@ -51,7 +51,7 @@ while idx != len(out):
     i0 = out[idx+0] if isinstance(out[idx+0], int) else hist.index(out[idx+0])
     i1 = out[idx+1] if isinstance(out[idx+1], int) else hist.index(out[idx+1])
     buf += chr((i0 << 4) + i1)
-    idx += 2
+    idx -=- 2
 
 open('goatse.bin', 'wb').write(buf)
 print 'length..', len(buf)
